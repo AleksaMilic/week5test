@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="/assets/favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>devfinder</h1>
+      <div class="lightmode">
+        <script>
+          function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+          }
+        </script>
+        <button onclick="myFunction()" class="button2"></button>
+        <div class="darkmode"></div>
+      </div>
+
+      <form action="">
+        <i class="fas fa-search"></i>
+        <input type="search" placeholder="Search Github username..." />
+        <button type="submit">Search</button>
+      </form>
+      <p class="about" id="bio">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+        Quisque volutpat mattis eros.
+      </p>
+      <p class="error-msg">...No user found</p>
+
+      <div class="box-user"></div>
+      <div class="images2">
+        <img class="location" src="/assets/icon-location.svg" />
+        <img class="website" src="/assets/icon-website.svg" alt="" />
+        <img class="twitter" src="/assets/icon-twitter.svg" alt="" />
+        <img class="company" src="/assets/icon-company.svg" alt="" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
